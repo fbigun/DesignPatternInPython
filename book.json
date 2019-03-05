@@ -1,0 +1,62 @@
+{
+
+    "output": null,
+
+    "output.name": "site",
+
+
+    "title": "设计模式 python",
+    "author" : "fbigun",
+    "description": "python中各种设计模式的实现方法",
+    "language" : "zh-hans",
+    "gitbook" : "3.2.3",
+    "root": ".",
+
+    "extension": ["epub", "pdf", "mobi"],
+
+    "plugins": ["prism", "-highlight", "-lunr", "-search", "search-plus"],
+
+    "pluginsConfig": {
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-solarizedlight.css"
+        ]
+        }
+    },
+
+    "variables": {},
+
+    "links": {
+        "sidebar": {
+            "主页" : "https://pyDesignPattern.github.io"
+        },
+
+        "sharing": {
+            "google": null,
+            "facebook": null,
+            "twitter": null,
+            "weibo": null,
+            "all": null
+        }
+    },
+
+
+    "pdf": {
+        "pageNumbers": false,
+
+        "fontSize": 12,
+
+        "paperSize": "a6",
+
+        "margin": {
+            "right": 62,
+            "left": 62,
+            "top": 36,
+            "bottom": 36
+        },
+
+        "headerTemplate": null,
+
+        "footerTemplate": null
+    }
+}
