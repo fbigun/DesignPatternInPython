@@ -1,0 +1,664 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>命令模式 · 设计模式 python</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="fbigun">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Mediator.html" />
+    
+    
+    <link rel="prev" href="ChainOfResponsibility.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://pyDesignPattern.github.io" target="_blank" class="custom-link">主页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Design.html">
+            
+                <a href="Design.html">
+            
+                    
+                    设计原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    创建类模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Singleton.html">
+            
+                <a href="Singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="AbstractFactory.html">
+            
+                <a href="AbstractFactory.html">
+            
+                    
+                    工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Builder.html">
+            
+                <a href="Builder.html">
+            
+                    
+                    建造者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Prototype.html">
+            
+                <a href="Prototype.html">
+            
+                    
+                    原型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Proxy.html">
+            
+                <a href="Proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Decorator.html">
+            
+                <a href="Decorator.html">
+            
+                    
+                    装饰器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Adapter.html">
+            
+                <a href="Adapter.html">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Facade.html">
+            
+                <a href="Facade.html">
+            
+                    
+                    门面模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="Composite.html">
+            
+                <a href="Composite.html">
+            
+                    
+                    组合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="Flyweight.html">
+            
+                <a href="Flyweight.html">
+            
+                    
+                    享元模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="Bridge.html">
+            
+                <a href="Bridge.html">
+            
+                    
+                    桥梁模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Strategy.html">
+            
+                <a href="Strategy.html">
+            
+                    
+                    策略模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="ChainOfResponsibility.html">
+            
+                <a href="ChainOfResponsibility.html">
+            
+                    
+                    责任链模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.14" data-path="Command.html">
+            
+                <a href="Command.html">
+            
+                    
+                    命令模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="Mediator.html">
+            
+                <a href="Mediator.html">
+            
+                    
+                    中介者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="Template.html">
+            
+                <a href="Template.html">
+            
+                    
+                    模板模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="Iterator.html">
+            
+                <a href="Iterator.html">
+            
+                    
+                    迭代器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="Visitor.html">
+            
+                <a href="Visitor.html">
+            
+                    
+                    访问者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="Observer.html">
+            
+                <a href="Observer.html">
+            
+                    
+                    观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="Interpreter.html">
+            
+                <a href="Interpreter.html">
+            
+                    
+                    解释器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="Memento.html">
+            
+                <a href="Memento.html">
+            
+                    
+                    备忘录模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="State.html">
+            
+                <a href="State.html">
+            
+                    
+                    状态模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >命令模式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x547D;&#x4EE4;&#x6A21;&#x5F0F;">&#x547D;&#x4EE4;&#x6A21;&#x5F0F;</h1>
+<h2 id="&#x4E00;&#x3001;&#x996D;&#x5E97;&#x70B9;&#x9910;&#x7CFB;&#x7EDF;">&#x4E00;&#x3001;&#x996D;&#x5E97;&#x70B9;&#x9910;&#x7CFB;&#x7EDF;</h2>
+<p>&#x53C8;&#x662F;&#x4E00;&#x4E2A;&#x70B9;&#x9910;&#x7CFB;&#x7EDF;&#xFF08;&#x539F;&#x8C05;&#x4F5C;&#x8005;&#x7684;&#x5403;&#x8D27;&#x5C5E;&#x6027;&#xFF09;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x6B21;&#x7684;&#x70B9;&#x9910;&#x7CFB;&#x7EDF;&#x662F;&#x4E2A;&#x996D;&#x5E97;&#x7684;&#x70B9;&#x9910;&#x7CFB;&#x7EDF;&#x3002;&#x996D;&#x5E97;&#x7684;&#x70B9;&#x9910;&#x7CFB;&#x7EDF;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#x561B;&#xFF1F;&#x5927;&#x4F19;&#x60F3;&#x60F3;&#x770B;&#xFF0C;&#x5728;&#x5927;&#x591A;&#x6570;&#x996D;&#x5E97;&#x4E2D;&#xFF0C;&#x5F53;&#x670D;&#x52A1;&#x5458;&#x5DF2;&#x7ECF;&#x63A5;&#x5230;&#x987E;&#x5BA2;&#x7684;&#x70B9;&#x5355;&#xFF0C;&#x5F55;&#x5165;&#x5230;&#x7CFB;&#x7EDF;&#x4E2D;&#x540E;&#xFF0C;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x83DC;&#x54C1;&#xFF0C;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x540E;&#x53F0;&#x53CD;&#x5E94;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x996D;&#x5E97;&#x6709;&#x51C9;&#x83DC;&#x95F4;&#x3001;&#x70ED;&#x83DC;&#x95F4;&#x3001;&#x4E3B;&#x98DF;&#x95F4;&#xFF0C;&#x90A3;&#x5F53;&#x670D;&#x52A1;&#x5458;&#x5C06;&#x83DC;&#x54C1;&#x5F55;&#x5165;&#x5230;&#x7CFB;&#x7EDF;&#x4E2D;&#x540E;&#xFF0C;&#x51C9;&#x83DC;&#x95F4;&#x4F1A;&#x6253;&#x5370;&#x51FA;&#x987E;&#x5BA2;&#x6240;&#x70B9;&#x7684;&#x51C9;&#x83DC;&#x6761;&#x76EE;&#xFF0C;&#x70ED;&#x83DC;&#x95F4;&#x4F1A;&#x6253;&#x5370;&#x51FA;&#x987E;&#x5BA2;&#x6240;&#x70B9;&#x7684;&#x70ED;&#x83DC;&#x6761;&#x76EE;&#xFF0C;&#x4E3B;&#x98DF;&#x95F4;&#x4F1A;&#x6253;&#x5370;&#x51FA;&#x4E3B;&#x98DF;&#x6761;&#x76EE;&#x3002;&#x90A3;&#x8FD9;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x540E;&#x53F0;&#x6A21;&#x5F0F;&#x8BE5;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;&#xFF1F;&#x5F53;&#x7136;&#xFF0C;&#x76F4;&#x63A5;&#x5728;&#x573A;&#x666F;&#x4EE3;&#x7801;&#x4E2D;&#x52A0;if&#x2026;else&#x2026;&#x8BED;&#x53E5;&#x5224;&#x65AD;&#x662F;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x8FD9;&#x6837;&#x505A;&#x53C8;&#x4E00;&#x6B21;&#x52A0;&#x91CD;&#x4E86;&#x7CFB;&#x7EDF;&#x8026;&#x5408;&#xFF0C;&#x8FDD;&#x53CD;&#x4E86;&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;&#xFF0C;&#x9047;&#x5230;&#x7CFB;&#x7EDF;&#x9700;&#x6C42;&#x53D8;&#x52A8;&#x65F6;&#xFF0C;&#x53C8;&#x4F1A;&#x8F7B;&#x6613;&#x8FDD;&#x53CD;&#x5F00;&#x95ED;&#x539F;&#x5219;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x7EC4;&#x7EC7;&#x4E00;&#x4E0B;&#x7ED3;&#x6784;&#x3002;
+&#x53EF;&#x4EE5;&#x5C06;&#x8BE5;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x6210;&#x524D;&#x53F0;&#x670D;&#x52A1;&#x5458;&#x7CFB;&#x7EDF;&#x548C;&#x540E;&#x53F0;&#x7CFB;&#x7EDF;&#xFF0C;&#x540E;&#x53F0;&#x7CFB;&#x7EDF;&#x8FDB;&#x4E00;&#x6B65;&#x7EC6;&#x5206;&#x6210;&#x4E3B;&#x98DF;&#x5B50;&#x7CFB;&#x7EDF;&#xFF0C;&#x51C9;&#x83DC;&#x5B50;&#x7CFB;&#x7EDF;&#xFF0C;&#x70ED;&#x83DC;&#x5B50;&#x7CFB;&#x7EDF;&#x3002;&#x540E;&#x53F0;&#x4E09;&#x4E2A;&#x5B50;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>class backSys():
+    def cook(self,dish):
+        pass
+class mainFoodSys(backSys):
+    def cook(self,dish):
+        print &quot;MAINFOOD:Cook %s&quot;%dish
+class coolDishSys(backSys):
+    def cook(self,dish):
+        print &quot;COOLDISH:Cook %s&quot;%dish
+class hotDishSys(backSys):
+    def cook(self,dish):
+        print &quot;HOTDISH:Cook %s&quot;%dish
+</code></pre><p>&#x524D;&#x53F0;&#x670D;&#x52A1;&#x5458;&#x7CFB;&#x7EDF;&#x4E0E;&#x540E;&#x53F0;&#x7CFB;&#x7EDF;&#x7684;&#x4EA4;&#x4E92;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x7684;&#x6A21;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x670D;&#x52A1;&#x5458;&#x5C06;&#x987E;&#x5BA2;&#x7684;&#x70B9;&#x5355;&#x5185;&#x5BB9;&#x5C01;&#x88C5;&#x6210;&#x547D;&#x4EE4;&#xFF0C;&#x76F4;&#x63A5;&#x5BF9;&#x540E;&#x53F0;&#x4E0B;&#x8FBE;&#x547D;&#x4EE4;&#xFF0C;&#x540E;&#x53F0;&#x5B8C;&#x6210;&#x547D;&#x4EE4;&#x8981;&#x6C42;&#x7684;&#x4E8B;&#xFF0C;&#x5373;&#x53EF;&#x3002;&#x524D;&#x53F0;&#x7CFB;&#x7EDF;&#x6784;&#x5EFA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>class waiterSys():
+    menu_map=dict()
+    commandList=[]
+    def setOrder(self,command):
+        print &quot;WAITER:Add dish&quot;
+        self.commandList.append(command)
+
+    def cancelOrder(self,command):
+        print &quot;WAITER:Cancel order...&quot;
+        self.commandList.remove(command)
+
+    def notify(self):
+        print &quot;WAITER:Nofify...&quot;
+        for command in self.commandList:
+            command.execute()
+</code></pre><p>&#x524D;&#x53F0;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;notify&#x63A5;&#x53E3;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x547D;&#x4EE4;&#x4E2D;&#x7684;execute&#x63A5;&#x53E3;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;&#x547D;&#x4EE4;&#x7C7B;&#x6784;&#x5EFA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>class Command():
+    receiver = None
+    def __init__(self, receiver):
+        self.receiver = receiver
+    def execute(self):
+        pass
+class foodCommand(Command):
+    dish=&quot;&quot;
+    def __init__(self,receiver,dish):
+        self.receiver=receiver
+        self.dish=dish
+    def execute(self):
+        self.receiver.cook(self.dish)
+
+class mainFoodCommand(foodCommand):
+    pass
+class coolDishCommand(foodCommand):
+    pass
+class hotDishCommand(foodCommand):
+    pass
+</code></pre><p>Command&#x7C7B;&#x662F;&#x4E2A;&#x6BD4;&#x8F83;&#x901A;&#x8FC7;&#x7684;&#x7C7B;&#xFF0C;foodCommand&#x7C7B;&#x662F;&#x672C;&#x4F8B;&#x4E2D;&#x6D89;&#x53CA;&#x7684;&#x7C7B;&#xFF0C;&#x76F8;&#x6BD4;&#x4E8E;Command&#x7C7B;&#x8FDB;&#x884C;&#x4E86;&#x4E00;&#x5B9A;&#x7684;&#x6539;&#x9020;&#x3002;&#x7531;&#x4E8E;&#x540E;&#x53F0;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x6267;&#x884C;&#x51FD;&#x6570;&#x90FD;&#x662F;cook&#xFF0C;&#x56E0;&#x800C;&#x5728;foodCommand&#x7C7B;&#x4E2D;&#x76F4;&#x63A5;&#x5C06;execute&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#xFF0C;&#x5982;&#x679C;&#x540E;&#x53F0;&#x7CFB;&#x7EDF;&#x6267;&#x884C;&#x51FD;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x4E09;&#x4E2A;&#x5B50;&#x547D;&#x4EE4;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B9E;&#x73B0;execute&#x63A5;&#x53E3;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x540E;&#x53F0;&#x4E09;&#x4E2A;&#x547D;&#x4EE4;&#x7C7B;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7EE7;&#x627F;&#xFF0C;&#x4E0D;&#x7528;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x4E86;&#x3002;&#xFF08;&#x8FD9;&#x91CC;&#x5B50;&#x7CFB;&#x7EDF;&#x6CA1;&#x6709;&#x53D8;&#x52A8;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4E09;&#x4E2A;&#x5B50;&#x7CFB;&#x7EDF;&#x7684;&#x547D;&#x4EE4;&#x5E9F;&#x5F03;&#x4E0D;&#x7528;&#xFF0C;&#x76F4;&#x63A5;&#x7528;foodCommand&#x5417;&#xFF1F;&#x5F53;&#x7136;&#x53EF;&#x4EE5;&#xFF0C;&#x5404;&#x6709;&#x5229;&#x853D;&#x3002;&#x8BF7;&#x8BFB;&#x8005;&#x7ED3;&#x5408;&#x81EA;&#x8EAB;&#x5F00;&#x53D1;&#x7ECF;&#x9A8C;&#xFF0C;&#x8FDB;&#x884C;&#x601D;&#x8003;&#x76F8;&#x5BF9;&#x4E8E;&#x81EA;&#x5DF1;&#x4E1A;&#x52A1;&#x573A;&#x666F;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x54EA;&#x79CD;&#x65B9;&#x5F0F;&#x66F4;&#x597D;&#x3002;&#xFF09;
+&#x4E3A;&#x4F7F;&#x573A;&#x666F;&#x4E1A;&#x52A1;&#x7CBE;&#x7B80;&#x4E00;&#x4E9B;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x52A0;&#x4E00;&#x4E2A;&#x83DC;&#x5355;&#x7C7B;&#x6765;&#x8F85;&#x52A9;&#x4E1A;&#x52A1;&#xFF0C;&#x83DC;&#x5355;&#x7C7B;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#x76F4;&#x63A5;&#x5199;&#x6B7B;&#x3002;</p>
+<pre class="language-"><code>class menuAll:
+    menu_map=dict()
+    def loadMenu(self):#&#x52A0;&#x8F7D;&#x83DC;&#x5355;&#xFF0C;&#x8FD9;&#x91CC;&#x76F4;&#x63A5;&#x5199;&#x6B7B;
+        self.menu_map[&quot;hot&quot;] = [&quot;Yu-Shiang Shredded Pork&quot;, &quot;Sauteed Tofu, Home Style&quot;, &quot;Sauteed Snow Peas&quot;]
+        self.menu_map[&quot;cool&quot;] = [&quot;Cucumber&quot;, &quot;Preserved egg&quot;]
+        self.menu_map[&quot;main&quot;] = [&quot;Rice&quot;, &quot;Pie&quot;]
+    def isHot(self,dish):
+        if dish in self.menu_map[&quot;hot&quot;]:
+            return True
+        return False
+    def isCool(self,dish):
+        if dish in self.menu_map[&quot;cool&quot;]:
+            return True
+        return False
+    def isMain(self,dish):
+        if dish in self.menu_map[&quot;main&quot;]:
+            return True
+        return False
+</code></pre><p>&#x4E1A;&#x52A1;&#x573A;&#x666F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>if  __name__==&quot;__main__&quot;:
+    dish_list=[&quot;Yu-Shiang Shredded Pork&quot;,&quot;Sauteed Tofu, Home Style&quot;,&quot;Cucumber&quot;,&quot;Rice&quot;]#&#x987E;&#x5BA2;&#x70B9;&#x7684;&#x83DC;
+    waiter_sys=waiterSys()
+    main_food_sys=mainFoodSys()
+    cool_dish_sys=coolDishSys()
+    hot_dish_sys=hotDishSys()
+    menu=menuAll()
+    menu.loadMenu()
+    for dish in dish_list:
+        if menu.isCool(dish):
+            cmd=coolDishCommand(cool_dish_sys,dish)
+        elif menu.isHot(dish):
+            cmd=hotDishCommand(hot_dish_sys,dish)
+        elif menu.isMain(dish):
+            cmd=mainFoodCommand(main_food_sys,dish)
+        else:
+            continue
+        waiter_sys.setOrder(cmd)
+    waiter_sys.notify()
+</code></pre><p>&#x6253;&#x5370;&#x5982;&#x4E0B;&#xFF1A;
+WAITER:Add dish
+WAITER:Add dish
+WAITER:Add dish
+WAITER:Add dish
+WAITER:Nofify...
+HOTDISH:Cook Yu-Shiang Shredded Pork
+HOTDISH:Cook Sauteed Tofu, Home Style
+COOLDISH:Cook Cucumber
+MAINFOOD:Cook Rice</p>
+<h2 id="&#x4E8C;&#x3001;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;">&#x4E8C;&#x3001;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;</h2>
+<p>&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x7684;&#x5B9A;&#x4E49;&#x4E3A;&#xFF1A;&#x5C06;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x8BF7;&#x6C42;&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x53C2;&#x6570;&#x5316;&#xFF0C;&#x5BF9;&#x8BF7;&#x6C42;&#x6392;&#x961F;&#x6216;&#x8005;&#x8BB0;&#x5F55;&#x8BF7;&#x6C42;&#x65E5;&#x5FD7;&#xFF0C;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x547D;&#x4EE4;&#x7684;&#x64A4;&#x9500;&#x548C;&#x6062;&#x590D;&#x529F;&#x80FD;&#x3002;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E2D;&#x901A;&#x5E38;&#x6D89;&#x53CA;&#x4E09;&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x62BD;&#x8C61;&#xFF1A;Receiver&#xFF0C;Command&#xFF0C;Invoker&#xFF08;&#x672C;&#x4F8B;&#x4E2D;&#x7684;waiterSys&#xFF09;&#x3002;
+<img src="http://ata2-img.cn-hangzhou.img-pub.aliyun-inc.com/314ef7d65294a59013b61ab313ed95f5.png" alt="f1.png">
+&#x53EA;&#x6709;&#x4E00;&#x4E2A;Invoker&#x7684;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x62BD;&#x8C61;&#x6210;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x7684;&#x201C;&#x661F;&#x5F62;&#x7F51;&#x7EDC;&#x201D;&#xFF0C;&#x4F46;&#x4E0E;&#x4E4B;&#x524D;&#x4ECB;&#x7ECD;&#x7684;&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;&#x4E0D;&#x540C;&#xFF0C;&#x5355;&#x7EAF;&#x7684;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x66F4;&#x50CF;&#x662F;&#x4E00;&#x4E2A;&#x8F90;&#x5C04;&#x72B6;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x7531;Invoker&#x76F4;&#x63A5;&#x5BF9;Receiver&#x4F20;&#x9012;&#x547D;&#x4EE4;&#xFF0C;&#x800C;&#x4E00;&#x822C;&#x4E0D;&#x53CD;&#x5411;&#x4F20;&#x9012;&#xFF0C;&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;&#x201C;&#x661F;&#x5F62;&#x7F51;&#x7EDC;&#x201D;&#x7684;&#x4E2D;&#x5FC3;&#xFF0C;&#x662F;&#x4E2A;&#x534F;&#x8C03;&#x8005;&#xFF0C;&#x62BD;&#x8C61;&#x7ED3;&#x8282;&#x95F4;&#x7684;&#x4FE1;&#x606F;&#x6D41;&#x5168;&#x90E8;&#x6216;&#x8005;&#x90E8;&#x5206;&#x662F;&#x53CC;&#x5411;&#x7684;&#x3002;
+&#x53E6;&#x5916;&#xFF0C;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x7684;&#x5B9A;&#x4E49;&#x4E2D;&#x63D0;&#x5230;&#x4E86;&#x201C;&#x64A4;&#x9500;&#x548C;&#x6062;&#x590D;&#x529F;&#x80FD;&#x201D;&#xFF0C;&#x4E5F;&#x7ED9;&#x4E86;&#x5404;&#x4F4D;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5EFA;&#x8BAE;&#xFF1A;&#x5404;&#x4E2A;Receiver&#x4E2D;&#x53EF;&#x4EE5;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x56DE;&#x6EDA;&#x63A5;&#x53E3;&#xFF0C;&#x652F;&#x6301;&#x547D;&#x4EE4;&#x7684;&#x201C;&#x64A4;&#x9500;&#x201D;&#x3002;</p>
+<h2 id="&#x4E09;&#x3001;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x70B9;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;">&#x4E09;&#x3001;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x70B9;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;</h2>
+<p>&#x4F18;&#x70B9;&#xFF1A;
+1&#x3001;&#x4F4E;&#x8026;&#x5408;&#xFF1A;&#x8C03;&#x7528;&#x8005;&#x548C;&#x63A5;&#x6536;&#x8005;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#xFF0C;&#x4E8C;&#x8005;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x4E2D;&#x7684;execute&#x63A5;&#x53E3;&#x8054;&#x7CFB;&#xFF1B;
+2&#x3001;&#x6269;&#x5C55;&#x6027;&#x597D;&#xFF1A;&#x65B0;&#x547D;&#x4EE4;&#x5F88;&#x5BB9;&#x6613;&#x52A0;&#x5165;&#xFF0C;&#x4E5F;&#x5F88;&#x5BB9;&#x6613;&#x62FC;&#x51FA;&#x201C;&#x7EC4;&#x5408;&#x547D;&#x4EE4;&#x201D;&#x3002;
+&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;
+1&#x3001;&#x89E6;&#x53D1;-&#x53CD;&#x9988;&#x673A;&#x5236;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x601D;&#x60F3;&#x3002;&#x5982;&#x57FA;&#x4E8E;&#x7BA1;&#x9053;&#x7ED3;&#x6784;&#x7684;&#x547D;&#x4EE4;&#x7CFB;&#x7EDF;&#xFF08;&#x5982;SHELL&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5957;&#x7528;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#xFF1B;&#x6B64;&#x5916;&#xFF0C;GUI&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#x53CD;&#x9988;&#xFF08;&#x5982;&#x70B9;&#x51FB;&#x3001;&#x952E;&#x5165;&#x7B49;&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x601D;&#x60F3;&#x3002;</p>
+<h2 id="&#x56DB;&#x3001;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x7684;&#x7F3A;&#x70B9;">&#x56DB;&#x3001;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x7684;&#x7F3A;&#x70B9;</h2>
+<p>1&#x3001;&#x5982;&#x679C;&#x4E1A;&#x52A1;&#x573A;&#x666F;&#x4E2D;&#x547D;&#x4EE4;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x5E94;&#x547D;&#x4EE4;&#x7C7B;&#x548C;&#x547D;&#x4EE4;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x91CF;&#x4E5F;&#x4F1A;&#x589E;&#x52A0;&#xFF0C;&#x8FD9;&#x6837;&#x7CFB;&#x7EDF;&#x4F1A;&#x81A8;&#x80C0;&#x5F97;&#x5F88;&#x5927;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ChainOfResponsibility.html" class="navigation navigation-prev " aria-label="Previous page: 责任链模式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Mediator.html" class="navigation navigation-next " aria-label="Next page: 中介者模式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"命令模式","level":"1.3.14","depth":2,"next":{"title":"中介者模式","level":"1.3.15","depth":2,"path":"chapter01/Mediator.md","ref":"chapter01/Mediator.md","articles":[]},"previous":{"title":"责任链模式","level":"1.3.13","depth":2,"path":"chapter01/ChainOfResponsibility.md","ref":"chapter01/ChainOfResponsibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","-lunr","-search","search-plus"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search-plus":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"fbigun","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a6","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"设计模式 python","language":"zh-hans","output.name":"site","links":{"sidebar":{"主页":"https://pyDesignPattern.github.io"},"sharing":{"google":null,"facebook":null,"twitter":null,"weibo":null,"all":null}},"gitbook":"3.2.3","description":"python中各种设计模式的实现方法","extension":["epub","pdf","mobi"]},"file":{"path":"chapter01/Command.md","mtime":"2019-03-05T14:46:56.119Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-05T16:18:54.355Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
