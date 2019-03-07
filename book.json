@@ -14,13 +14,27 @@
 
     "extension": ["epub", "pdf", "mobi"],
 
-    "plugins": ["prism", "-highlight", "-lunr", "-search", "search-plus"],
+    "plugins": ["prism", "autocover", "-highlight", "-lunr", "-search", "search-plus"],
 
     "pluginsConfig": {
         "prism": {
             "css": [
                 "prismjs/themes/prism-solarizedlight.css"
-        ]
+            ]
+        },
+        "autocover": {
+            "font": {
+                "size": null,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "size": {
+                "w": 1800,
+                "h": 2360
+            },
+            "background": {
+                "color": "#09F"
+            }
         }
     },
 
@@ -48,11 +62,12 @@
 
         "paperSize": "a6",
 
-        "margin": {
-            "right": 62,
-            "left": 62,
-            "top": 36,
-            "bottom": 36
+        "margin":{
+            "top": 0,
+            "bottom": 0,
+            "right": 0,
+            "left": 0
+
         },
 
         "headerTemplate": null,
