@@ -23,17 +23,11 @@
             ]
         },
         "autocover": {
+            "title": "设计模式 python3",
+            "author": "fbigun <rsdhlz@qq.com>",
             "font": {
                 "size": 72,
-                "family": "Noto Serif CJK SC",
                 "color": "#AAA"
-            },
-            "size": {
-                "w": 1800,
-                "h": 2360
-            },
-            "background": {
-                "color": "#000"
             }
         }
     },
