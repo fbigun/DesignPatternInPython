@@ -18,7 +18,11 @@
         },
         "autocover": {
             "title": "设计模式 python3",
-            "author": "fbigun"
+            "author": "fbigun",
+            "background": {
+                "color": "#FFF"
+            },
+            "template": "./templates/default.svg"
         }
     },
 
