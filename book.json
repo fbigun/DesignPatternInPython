@@ -19,6 +19,9 @@
         "autocover": {
             "title": "设计模式 python3",
             "author": "fbigun",
+            "font": {
+                "family": "Noto Serif"
+            },
             "background": {
                 "color": "#FFF"
             },
