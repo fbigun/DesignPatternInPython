@@ -58,17 +58,17 @@
     "pdf": {
         "pageNumbers": false,
 
-        "fontSize": 10,
+        "fontSize": 8,
 
         "fontFamily": "Noto Serif CJK SC",
 
         "paperSize": "a6",
 
         "margin":{
-            "top": 24,
-            "bottom": 24,
-            "right": 36,
-            "left": 36
+            "top": 8,
+            "bottom": 8,
+            "right": 12,
+            "left": 12
         },
 
         "headerTemplate": null,
