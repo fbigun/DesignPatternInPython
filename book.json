@@ -25,7 +25,7 @@
         "autocover": {
             "font": {
                 "size": null,
-                "family": "Impact",
+                "family": "Noto Serif CJK SC",
                 "color": "#FFF"
             },
             "size": {
@@ -58,16 +58,17 @@
     "pdf": {
         "pageNumbers": false,
 
-        "fontSize": 12,
+        "fontSize": 10,
+
+        "fontFamily": "Noto Serif CJK SC",
 
         "paperSize": "a6",
 
         "margin":{
-            "top": 0,
-            "bottom": 0,
-            "right": 0,
-            "left": 0
-
+            "top": 24,
+            "bottom": 24,
+            "right": 36,
+            "left": 36
         },
 
         "headerTemplate": null,
