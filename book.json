@@ -30,19 +30,15 @@
         }
     },
 
-
     "pdf": {
-        "pageNumbers": false,
-
         "fontSize": 8,
-
         "paperSize": "a6",
-
         "margin":{
             "top": 8,
             "bottom": 8,
             "right": 12,
             "left": 12
-        }
+        },
+        "headerTemplate": ""
     }
 }
