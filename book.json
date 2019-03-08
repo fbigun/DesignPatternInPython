@@ -20,7 +20,7 @@
             "title": "设计模式 python3",
             "author": "fbigun",
             "font": {
-                "family": "Noto Serif"
+                "family": "Noto Sans Mono"
             },
             "background": {
                 "color": "#FFF"
@@ -38,14 +38,15 @@
     },
 
     "pdf": {
-        "fontSize": 8,
+        "fontSize": 10,
         "paperSize": "a6",
+        "fontFamily": "Noto serif Mono",
         "margin":{
             "top": 8,
             "bottom": 8,
             "right": 12,
             "left": 12
         },
-        "headerTemplate": ""
+        "headerTemplate": null
     }
 }
