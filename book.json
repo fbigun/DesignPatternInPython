@@ -18,11 +18,7 @@
         },
         "autocover": {
             "title": "设计模式 python3",
-            "author": "fbigun <rsdhlz@qq.com>",
-            "font": {
-                "size": 72,
-                "color": "#AAA"
-            }
+            "author": "fbigun"
         }
     },
 
