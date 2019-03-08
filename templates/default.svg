@@ -29,6 +29,6 @@
 
   <image
     xlink:href="<%= watermark %>"
-    x="40%" y="90%" width="25%" height="25%"
+    x="90%" y="90%" width="25%" height="25%"
     transform="translate(-490,-320)"/>
 </svg>
