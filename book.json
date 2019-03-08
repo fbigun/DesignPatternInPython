@@ -14,7 +14,7 @@
 
     "extension": ["epub", "pdf", "mobi"],
 
-    "plugins": ["prism", "autocover", "-highlight", "-lunr", "-search", "search-plus"],
+    "plugins": ["prism", "autocover", "-highlight", "-lunr", "-search", "-sharing", "search-plus"],
 
     "pluginsConfig": {
         "prism": {
@@ -43,14 +43,6 @@
     "links": {
         "sidebar": {
             "主页" : "https://pyDesignPattern.github.io"
-        },
-
-        "sharing": {
-            "google": null,
-            "facebook": null,
-            "twitter": null,
-            "weibo": null,
-            "all": null
         }
     },
 
