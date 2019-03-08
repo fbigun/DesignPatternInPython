@@ -46,8 +46,6 @@
 
         "fontSize": 8,
 
-        "fontFamily": "Noto Serif CJK SC",
-
         "paperSize": "a6",
 
         "margin":{
@@ -55,10 +53,6 @@
             "bottom": 8,
             "right": 12,
             "left": 12
-        },
-
-        "headerTemplate": null,
-
-        "footerTemplate": null
+        }
     }
 }
