@@ -17,7 +17,7 @@
     font-family="<%= font.family %>"
     font-size="<%= size.title * 2 %>">
     <% _.forEach(title, function(part){ %>
-      <tspan x="50%" dy="<%= size.title %>"><%= part %></tspan>
+      <tspan x="50%" dy="<%= size.title *2 %>"><%= part %></tspan>
     <% }); %>
   </text>
 
@@ -25,10 +25,10 @@
     x="90%" y="50%"
     fill="<%= font.color %>"
     font-family="<%= font.family %>"
-    font-size="<%= size.author / 2 %>"><%= author %></text>
+    font-size="<%= size.author / 4 %>"><%= author %></text>
 
   <image
     xlink:href="<%= watermark %>"
-    x="10%" y="90%" width="50%" height="50%"
+    x="10%" y="90%" width="25%" height="25%"
     transform="translate(-490,-320)"/>
 </svg>
