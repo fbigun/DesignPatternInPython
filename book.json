@@ -1,10 +1,4 @@
 {
-
-    "output": null,
-
-    "output.name": "site",
-
-
     "title": "设计模式 python",
     "author" : "fbigun",
     "description": "python中各种设计模式的实现方法",
