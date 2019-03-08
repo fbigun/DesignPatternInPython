@@ -24,16 +24,16 @@
         },
         "autocover": {
             "font": {
-                "size": null,
+                "size": 72,
                 "family": "Noto Serif CJK SC",
-                "color": "#FFF"
+                "color": "##828080"
             },
             "size": {
                 "w": 1800,
                 "h": 2360
             },
             "background": {
-                "color": "#09F"
+                "color": "#FFF"
             }
         }
     },
