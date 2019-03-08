@@ -22,13 +22,13 @@
   </text>
 
   <text
-    x="60%" y="70%"
+    x="60%" y="60%"
     fill="<%= font.color %>"
     font-family="<%= font.family %>"
     font-size="<%= size.author / 4 %>"><%= author %></text>
 
   <image
     xlink:href="<%= watermark %>"
-    x="30%" y="90%" width="25%" height="25%"
+    x="40%" y="90%" width="25%" height="25%"
     transform="translate(-490,-320)"/>
 </svg>
